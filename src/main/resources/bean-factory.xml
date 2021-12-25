@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="minusService3" class="service3.MinusService3" >
+    </bean>
+
+    <bean id="plusService3" class="service3.PlusService3" >
+    </bean>
+
+    <bean id="calculator3" class="service3.Calculator3" >
+        <property name="minusService3" ref="minusService3"/>
+        <property name="plusService3" ref="plusService3"/>
+    </bean>
+
+
+
+</beans>
